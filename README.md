@@ -37,7 +37,7 @@ Things the service currently checks for:
 * Mismatch in the ad descriptions
 * Campaigns that are missing from AdService altogether
 
-In the future it might check for additional things, like multiple campaigns refering to the same AdService, etc.
+It could be taken a step furher by checking for additional things, like multiple campaigns refering to the same AdService, etc.
 
 ## Request format
 
@@ -67,7 +67,6 @@ discrepancies.
     },
     {
       "id": 2,
-      "missing": false,
       "status": {
         "local_value": "active",
         "ad_service_value": "enabled",
