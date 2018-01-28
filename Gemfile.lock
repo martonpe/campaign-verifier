@@ -38,6 +38,9 @@ GEM
       i18n (~> 0.7)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
+    annotate (2.6.5)
+      activerecord (>= 2.3.0)
+      rake (>= 0.8.7)
     arel (8.0.0)
     bindex (0.5.0)
     builder (3.2.3)
@@ -177,6 +180,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  annotate (= 2.6.5)
   byebug
   coffee-rails (~> 4.2)
   jbuilder (~> 2.5)
@@ -195,4 +199,4 @@ DEPENDENCIES
   web-console (>= 3.3.0)
 
 BUNDLED WITH
-   1.15.4
+   1.16.1
