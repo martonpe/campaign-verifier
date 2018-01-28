@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -e
+ROOT=$(git rev-parse --show-toplevel)
+
+main () {
+    echo "===> Install dependencies with brew..."
+    brew bundle --no-upgrade
+
+    echo "===> Install dependencies..."
+    bundle install
+
+    echo "===> Set up database..."
+    rake db:create db:structure:load db:seed
+}
+
+main "$@"
